@@ -1,0 +1,14 @@
+package yang;
+syntax = "proto3";
+
+message Chess {
+    int32 chess_index = 1;
+    int32 time_tag = 2;
+}
+
+message MatchPlayInfo {
+    int32 game_type = 1;
+    int32 map_id = 2;
+    int32 map_seed = 3;
+    repeated Chess step_info_list = 4;
+}
